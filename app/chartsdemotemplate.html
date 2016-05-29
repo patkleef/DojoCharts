@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="form-container">
+        <table cellspacing="10">
+            <tr>
+                <td><label for="name">Chart type:</label></td>
+                <td>
+                    <select name="select" data-dojo-type="dojox.form.DropDownSelect" id="chartTypeDropDownSelect">
+                        <option value="Line">Line</option>
+                        <option value="Columns">Columns</option>
+                        <option value="Pie">Pie</option>
+                        <option value="Bubbles">Bubbles</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="name">Theme:</label></td>
+                <td>
+                    <select name="select" data-dojo-type="dojox.form.DropDownSelect" id="themeDropDownSelect">
+                        <option value="Dollar">Dollar</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Julie">Julie</option>
+                        <option value="PurpleRain">PurpleRain</option>
+                        <option value="Renkoo">Renkoo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="title">Title:</label></td>
+                <td><input type="text" name="title" value="Chart" data-dojo-type="dijit/form/TextBox" id="titleTextBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="titlePositionDropDownSelect">Title position:</label></td>
+                <td>
+                    <select name="titlePositionDropDownSelect" data-dojo-type="dojox.form.DropDownSelect" id="titlePositionDropDownSelect">
+                        <option value="top">Top</option>
+                        <option value="bottom">Bottom</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><h3>Action and effects</h3></td>    
+            </tr>
+            <tr>
+                <td><label for="highlight">Highlight:</label></td>
+                <td><input type="checkbox" name="highlight" data-dojo-type="dijit/form/CheckBox" id="highlightCheckBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="magnify">Magnify:</label></td>
+                <td><input type="checkbox" name="magnify" data-dojo-type="dijit/form/CheckBox" id="magnifyCheckBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="moveslice">MoveSlice:</label></td>
+                <td><input type="checkbox" name="moveslice" data-dojo-type="dijit/form/CheckBox" id="moveSliceCheckBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="shake">Shake:</label></td>
+                <td><input type="checkbox" name="shake" data-dojo-type="dijit/form/CheckBox" id="shakeCheckBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="tooltip">Tooltip:</label></td>
+                <td><input type="checkbox" name="tooltip" data-dojo-type="dijit/form/CheckBox" id="tooltipCheckBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="mousezoomandpan">MouseZoomAndPan:</label></td>
+                <td><input type="checkbox" name="mousezoomandpan" data-dojo-type="dijit/form/CheckBox" id="mousezoomandpanCheckBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="mouseindicator">MouseIndicator:</label></td>
+                <td><input type="checkbox" name="mouseindicator" data-dojo-type="dijit/form/CheckBox" id="mouseindicatorCheckBox" /></td>
+            </tr>
+            <tr>
+                <td><label for="legend">Legend:</label></td>
+                <td><input type="checkbox" name="legend" data-dojo-type="dijit/form/CheckBox" id="legendCheckBox" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button data-dojo-type="dijit/form/Button" type="button" id="generateButton">Generate</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="chartsContainer" class="charts-container">
+    
+    </div>
+    <div id="eventsContainer" class="events-container">
+        <ul id="eventList">            
+        </ul>
+    </div>
+</div>
