@@ -223,22 +223,12 @@ define([
         renderPieChart: function(chart) {
             chart.addPlot("default", { type: "Pie", tension: "X" });
             
-            var dataSet1 = [{
-                                y: 3,
-                                text: "2012"
-                            }, {
-                                y: 7,
-                                text: "2013"
-                            },{
-                                y: 4,
-                                text: "2014"
-                            },{
-                                y: 9,
-                                text: "2015"
-                            },{
-                                y: 6,
-                                text: "2016"
-                            }];
+            var dataSet1 = [{ y: 3, text: "2012" }, 
+                            { y: 7, text: "2013" },
+                            { y: 4, text: "2014" },
+                            { y: 9, text: "2015" },
+                            { y: 6, text: "2016" }];
+                            
             var dataSet2 = [2,5,2,5,7,3,1];
                             
             chart.addSeries("Series 1",dataSet1);
